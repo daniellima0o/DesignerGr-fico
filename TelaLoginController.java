@@ -1,5 +1,6 @@
-package daniellima.login;
+package com.daniellima.login.controller;
 
+import com.daniellima.login.App;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,8 +15,8 @@ public class TelaLoginController {
     @FXML
     private Button entrarButton;
 
-    @FXML
-    private Label msgLogarLabel;
+     @FXML
+    private Label msgLoginLabel;
 
     @FXML
     private PasswordField senhaField;
@@ -35,16 +36,15 @@ public class TelaLoginController {
     @FXML
     public void login(ActionEvent event) {
         if(usuarioTextField.getText().equals("daniellima") && senhaField.getText().equals("123456")){
-            msgLogarLabel.setText("Login realizado com sucesso");
+            msgLoginLabel.setText("Login realizado com sucesso");
         }else{
-            msgLogarLabel.setText("Login não realizado com sucesso");
+            msgLoginLabel.setText("Login não realizado com sucesso");
         }
-        
-
     }
+    
     @FXML
     void cadastrar(ActionEvent event) throws IOException {
-        App.setRoot("telaCadastro1");
+        App.setRoot("telaCadastro");
 
     }
 }
