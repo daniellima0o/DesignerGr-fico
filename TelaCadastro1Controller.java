@@ -1,5 +1,6 @@
-package daniellima.login;
+package com.daniellima.login.controller;
 
+import com.daniellima.login.App;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class TelaCadastro1Controller {
+public class TelaCadastroController {
 
     @FXML
     private Button cadastrarButton;
